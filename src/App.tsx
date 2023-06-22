@@ -1,17 +1,18 @@
 import React from 'react';
-import logo from './media/logo.svg';
-import './styles/App.css';
+import Card from './components/Card';
+
+const card = {
+  number: "1223 4543 4567 0098",
+  name: "Robert Muller",
+  balance: "1.0000"
+  
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          DeepSaveFront
-        </p>
-      </header>
-    </div>
+    <>
+      <Card cardNumber={card.number} cardName={card.name} cardBalance={card.balance}/>
+    </>
   );
 }
 
