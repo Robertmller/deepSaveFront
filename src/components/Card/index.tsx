@@ -1,9 +1,9 @@
 import '../../styles/Card.css';
-
 interface CardProps{
-    cardNumber: string;
+    cardNumber: any;
     cardName: string;
     cardBalance: string;
+    cardButton: any;
 }
 
 export default function Card(Props: CardProps) {
@@ -13,7 +13,8 @@ export default function Card(Props: CardProps) {
       <div className="card-details">
         <div className="card-number"> {Props.cardNumber} </div>
         <div className="card-holder"> {Props.cardName} </div>
-        <div className="card-balance">R$ {Props.cardBalance} </div>
+        <div className="card-balance">USD {Props.cardBalance} </div>
+        <button className="card-button"> <span className="card-text-button" onClick={Props.cardButton}>Connectar carteira </span></button>
       </div>
     </div>
     </div>
