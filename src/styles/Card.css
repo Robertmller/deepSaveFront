@@ -28,7 +28,7 @@
 }
 
 .card-number {
-  font-size: 18px;
+  font-size: 13px;
   font-weight: bold;
 }
 
@@ -46,4 +46,17 @@
   width: 40px;
   height: auto;
   margin-top: 10px;
+}
+
+.card-button {
+  width: 150px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.card-text-button{
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
 }
